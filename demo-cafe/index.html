@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Corner Café – Demo</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: Georgia, serif; color: #3b2a1a; background: #fdf8f2; line-height: 1.6; }
+    .demo-bar { background: #222; color: #fff; text-align: center; padding: 8px; font-family: Arial, sans-serif; font-size: 0.85rem; }
+    .demo-bar a { color: #ffd27f; }
+    header { background: linear-gradient(135deg, #6f4e37, #a47551); color: #fff; text-align: center; padding: 80px 20px; }
+    header h1 { font-size: 2.5rem; }
+    section { max-width: 800px; margin: 40px auto; padding: 0 20px; }
+    h2 { margin-bottom: 16px; color: #6f4e37; }
+    .menu-item { display: flex; justify-content: space-between; border-bottom: 1px dashed #c9b29b; padding: 10px 0; }
+    form { display: grid; gap: 12px; }
+    input, button { padding: 12px; font-size: 1rem; border: 1px solid #c9b29b; border-radius: 6px; }
+    button { background: #6f4e37; color: #fff; border: none; cursor: pointer; }
+    footer { text-align: center; padding: 30px; color: #8a7360; }
+  </style>
+</head>
+<body>
+
+  <div class="demo-bar">Demo website by Kateryna Tarasiuk · <a href="../">Back to my site</a></div>
+
+  <header>
+    <h1>☕ The Corner Café</h1>
+    <p>Fresh coffee & homemade cakes in the heart of London</p>
+  </header>
+
+  <section>
+    <h2>Menu</h2>
+    <div class="menu-item"><span>Flat White</span><span>£3.20</span></div>
+    <div class="menu-item"><span>Cappuccino</span><span>£3.40</span></div>
+    <div class="menu-item"><span>Carrot Cake</span><span>£3.90</span></div>
+    <div class="menu-item"><span>Avocado Toast</span><span>£7.50</span></div>
+  </section>
+
+  <section>
+    <h2>Book a table</h2>
+    <form onsubmit="alert('Demo only – on a real site this booking would be saved to a database.'); return false;">
+      <input type="text" placeholder="Your name" required>
+      <input type="date" required>
+      <input type="number" placeholder="Number of guests" min="1" required>
+      <button type="submit">Book now</button>
+    </form>
+  </section>
+
+  <footer>Open Mon–Sat, 8am–6pm · 12 High Street, London</footer>
+
+</body>
+</html>
