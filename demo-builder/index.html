@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solid Build London – Demo</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: Arial, sans-serif; color: #1a1a1a; background: #f4f4f4; line-height: 1.6; }
+    .demo-bar { background: #000; color: #fff; text-align: center; padding: 8px; font-size: 0.85rem; }
+    .demo-bar a { color: #ffc400; }
+    header { background: #1a1a1a; color: #fff; text-align: center; padding: 80px 20px; border-bottom: 6px solid #ffc400; }
+    header h1 { font-size: 2.5rem; text-transform: uppercase; }
+    header h1 span { color: #ffc400; }
+    .call-btn { display: inline-block; margin-top: 20px; background: #ffc400; color: #1a1a1a;
+                padding: 14px 32px; font-weight: bold; text-decoration: none; border-radius: 4px; }
+    section { max-width: 900px; margin: 40px auto; padding: 0 20px; }
+    h2 { margin-bottom: 16px; text-transform: uppercase; border-left: 6px solid #ffc400; padding-left: 12px; }
+    .services { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; }
+    .service { background: #fff; padding: 24px; text-align: center; border-radius: 4px; }
+    .service .icon { font-size: 2.5rem; }
+    .review { background: #fff; padding: 20px; margin-bottom: 12px; border-left: 4px solid #ffc400; }
+    form { display: grid; gap: 12px; }
+    input, textarea, button { padding: 12px; font-size: 1rem; border: 1px solid #ccc; border-radius: 4px; font-family: inherit; }
+    textarea { min-height: 120px; resize: vertical; }
+    button { background: #1a1a1a; color: #ffc400; border: none; font-weight: bold; cursor: pointer; }
+    footer { text-align: center; padding: 30px; color: #777; }
+  </style>
+</head>
+<body>
+
+  <div class="demo-bar">Demo website by Kateryna Tarasiuk · <a href="../">Back to my site</a></div>
+
+  <header>
+    <h1>Solid <span>Build</span> London</h1>
+    <p>Renovations · Repairs · Kitchens & Bathrooms</p>
+    <a class="call-btn" href="tel:+440000000000">📞 Call for a free quote</a>
+  </header>
+
+  <section>
+    <h2>Our services</h2>
+    <div class="services">
+      <div class="service"><div class="icon">🔨</div><h3>General repairs</h3></div>
+      <div class="service"><div class="icon">🛁</div><h3>Bathrooms</h3></div>
+      <div class="service"><div class="icon">🍳</div><h3>Kitchens</h3></div>
+      <div class="service"><div class="icon">🎨</div><h3>Painting & decorating</h3></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Customer reviews</h2>
+    <div class="review">⭐⭐⭐⭐⭐ "Fast, tidy and fairly priced. Our new bathroom looks amazing." – Sarah, Ealing</div>
+    <div class="review">⭐⭐⭐⭐⭐ "Turned up on time and finished ahead of schedule." – Mark, Harrow</div>
+  </section>
+
+  <section>
+    <h2>Request a quote</h2>
+    <form onsubmit="alert('Demo only – on a real site this request would be saved and emailed to the builder.'); return false;">
+      <input type="text" placeholder="Your name" required>
+      <input type="tel" placeholder="Phone number" required>
+      <input type="text" placeholder="Postcode" required>
+      <textarea placeholder="Describe the job (e.g. new bathroom, leaking tap...)" required></textarea>
+      <button type="submit">Send request</button>
+    </form>
+  </section>
+
+  <footer>Serving West & North London · Fully insured</footer>
+
+</body>
+</html>
